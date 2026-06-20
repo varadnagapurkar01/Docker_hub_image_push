@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Image
         run: |
-	    docker build -t varadnagapurkar19/docker-img-push:${{ github.run_number }} .
     	   # github.run_number help karta ek unique value tayyar kart 1-2-3-4 so he versioning sati vaprla
+	    docker build -t varadnagapurkar19/docker-img-push:${{ github.run_number }} .
             docker build -t varadnagapurkar19/docker-img-push:latest .
       - name: Push Image
         run: |
